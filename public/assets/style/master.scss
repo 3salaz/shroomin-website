@@ -1,0 +1,19 @@
+@import './init/reset';
+@import './init/variables';
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  .parallax-container.parallax img{
+      bottom: 100px;
+  }
+  .carousel{
+      height: 300px !important;
+      margin-bottom: -50px;
+  }

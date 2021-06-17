@@ -1,45 +1,174 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.6.7/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.6.7/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <link rel="stylesheet" href="./style/master.css">
-    </head>
-  <body>
-    <main class="container">
-      <div class="row">
-        <div class="col-6">Column</div>
-        <div class="col-6">Column</div>
-      </div>
-      <div class="row">
-        <div class="w-100"></div>
-        <div class="col">Column</div>
-        <div class="col">Column</div>
-      </div>
-    </main>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="w-100"></div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shroomin</title>
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/8.6.7/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/8.6.7/firebase-auth.js"></script>
+  <script defer src="/__/firebase/8.6.7/firebase-database.js"></script>
+  <script defer src="/__/firebase/8.6.7/firebase-firestore.js"></script>
+  <script defer src="/__/firebase/8.6.7/firebase-functions.js"></script>
+  <script defer src="/__/firebase/8.6.7/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/8.6.7/firebase-storage.js"></script>
+  <script defer src="/__/firebase/8.6.7/firebase-analytics.js"></script>
+  <script defer src="/__/firebase/8.6.7/firebase-remote-config.js"></script>
+  <script defer src="/__/firebase/8.6.7/firebase-performance.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/vendors/materialize/js/materialize.min.js"></script>
+
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/master.css">
+  <link rel="stylesheet" href="./assets/vendors/materialize/css/materialize.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Shrooms</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+  </ul>
+  <!-- modals -->
+  </div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <main class="row">
+    <!-- Modal Structure -->
+    <div class="container">
+      <div class="col s12 l6">
+        <div class="card">
+          <div class="card-panel teal">
+            <header>
+              <h1 class="center-align">Shrooms</h1>
+            </header>
+            <div class="carousel">
+              <p class="right-align grey-text">Team Members</p>
+              <a class="carousel-item waves-effect waves-light modal-trigger" href="#modal2"><img class="responsive-img"
+                  src="http://via.placeholder.com/200"></a>
+              <a class="carousel-item waves-effect waves-light modal-trigger" href="#three!"><img class="responsive-img"
+                  src="http://via.placeholder.com/200"></a>
+              <a class="carousel-item waves-effect waves-light modal-trigger" href="#four!"><img class="responsive-img"
+                  src="http://via.placeholder.com/200"></a>
+              <a class="carousel-item waves-effect waves-light modal-trigger" href="#five!"><img class="responsive-img"
+                  src="http://via.placeholder.com/200"></a>
+              <a class="carousel-item waves-effect waves-light modal-trigger" href="#modal-member-1"><img
+                  class="responsive-img" src="http://via.placeholder.com/200"></a>
+              <!-- Modal -->
+            </div>
+          </div>
+          <div class="waves-effect waves-block waves-light">
+            <div class="activator">
+            </div>
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Scrum<i
+                class="material-icons right">more_vert</i></span>
+            <p><a href="#">Questions?</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Scrum<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 l6">
+        <div id="comingSoon" class="row card-panel">
+          <!-- <header class="col s12"><h3 class="left-align">Shr</h1> 
+            </header> -->
+          <div class="col s6">
+            <div class="transpenant">
+              <img class="responsive-img" src="http://via.placeholder.com/200x100" alt="">
+            </div>
+          </div>
+          <div class="col s6">
+            <ul id="socialLinks">
+              <li class="links"><a href="https://twitter.com">Twitter</a></li>
+              <li class="links"><a href="">Email</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="feed">
+          <div class="row">
+            <div class="card">
+              <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                  <li class="tab"><a href="#twitter">Twitter</a></li>
+                  <li class="tab"><a class="active" href="#test5">Test 2</a></li>
+                  <li class="tab"><a href="#test6">Test 3</a></li>
+                </ul>
+              </div>
+              <div class="card-content grey lighten-4">
+                <div id="twitter" class="card-content">
+                  <p>Twittter Embed</p>
+                </div>
+                <div id="test5" class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient
+                      because
+                      I require little markup to use effectively.</p>
+                </div>
+                <div id="test6" class="card-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate aperiam hic dolores blanditiis? Commodi, veniam expedita hic amet culpa sit et vitae unde velit. Reiciendis eos maiores suscipit itaque?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <div class="parallax-container">
+    <div class="parallax"><img src="./assets/images/photography/bridge-large.jpeg"></div>
+  </div>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/scripts/main.js"></script>
+</body>
+
 </html>
