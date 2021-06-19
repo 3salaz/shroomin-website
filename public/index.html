@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/master.css">
+  <link rel="stylesheet" href="./assets/vendors/materialize/css/materialize.min.css">
   <title>Shroomin</title>
   <!-- update the version number as needed -->
   <script defer src="/__/firebase/8.6.7/firebase-app.js"></script>
@@ -22,9 +25,6 @@
   <script src="./assets/vendors/materialize/js/materialize.min.js"></script>
 
   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/style/master.css">
-  <link rel="stylesheet" href="./assets/vendors/materialize/css/materialize.min.css">
 </head>
 
 <body>
@@ -101,14 +101,12 @@
           <!-- <header class="col s12"><h3 class="left-align">Shr</h1> 
             </header> -->
           <div class="col s6">
-            <div class="transpenant">
-              <img class="responsive-img" src="http://via.placeholder.com/200x100" alt="">
-            </div>
+              <img class="responsive-img" src="http://via.placeholder.com/300x175" alt="">
           </div>
           <div class="col s6">
-            <ul id="socialLinks">
+            <ul class="social-links">
               <li class="links"><a href="https://twitter.com">Twitter</a></li>
-              <li class="links"><a href="">Email</a></li>
+              <li class="links"><a href="mailto:questions@teamshroomin.com?bcc=erik@tekperfect.com&subject=Team%20Questions&body=Any%20questions post below,%20We'll%20get%20back%20to%20you%20as%20soon%20as%20we%20can!">Email Us</a></li>
             </ul>
           </div>
         </div>
@@ -118,20 +116,21 @@
               <div class="card-tabs">
                 <ul class="tabs tabs-fixed-width">
                   <li class="tab"><a href="#twitter">Twitter</a></li>
-                  <li class="tab"><a class="active" href="#test5">Test 2</a></li>
-                  <li class="tab"><a href="#test6">Test 3</a></li>
+                  <li class="tab"><a class="active" href="#test5"><i class="material-icons">music_video</i></a></li>
+                  <li class="tab"><a href="#test6"><i class="material-icons">photo_library</i></a></li>
                 </ul>
               </div>
               <div class="card-content grey lighten-4">
                 <div id="twitter" class="card-content">
-                  <p>Twittter Embed</p>
+                  <a class="twitter-timeline" href="https://twitter.com/WeAreGameheads?ref_src=twsrc%5Etfw">Tweets by WeAreGameheads</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
-                <div id="test5" class="card-content">
+                <div id="music" class="card-content">
                     <p>I am a very simple card. I am good at containing small bits of information. I am convenient
                       because
                       I require little markup to use effectively.</p>
                 </div>
-                <div id="test6" class="card-content">
+                <div id="art" class="card-content">
+
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate aperiam hic dolores blanditiis? Commodi, veniam expedita hic amet culpa sit et vitae unde velit. Reiciendis eos maiores suscipit itaque?</p>
                 </div>
               </div>
